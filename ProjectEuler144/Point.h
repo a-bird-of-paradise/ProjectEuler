@@ -6,12 +6,12 @@
 namespace PT
 {
 
-    enum System { Cartesian, Polar };
+    enum class System { Cartesian, Polar };
 
 class Point2D
 {
 public:
-    Point2D(const long double X = 0, const long double Y = 0, const System Basis = Cartesian);
+    Point2D(const long double X = 0, const long double Y = 0, const System Basis = System::Cartesian);
     Point2D ToCartesian() const;
     Point2D ToPolar() const;
     // getters
